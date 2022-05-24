@@ -18,7 +18,7 @@ let createDonat = function () {
   const torus = new THREE.Mesh(geometry, material);
 
   torus.position.x = randomRange(-20, 15);
-  console.log(torus.position.x, "yellow");
+
   torus.position.z = randomRange(-20, 15);
   torus.position.y = 15;
 
