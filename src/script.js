@@ -48,7 +48,8 @@ renderer.setSize(sizes.width, sizes.height);
 const clock = new THREE.Clock();
 
 const init = function () {
-  createDonat();
+  let x = Math.random();
+  if (x < 0.1) createDonat();
   donutsArray.forEach((el) => (el.position.y -= ADD));
 
   renderer.render(scene, camera);
